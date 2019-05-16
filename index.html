@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fun-border-button</title>
+  <style>
+    body {
+      padding: 200px;
+    }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 20px;
+    }
+  </style>
+  <style>
+    .funBorderButton {
+      transition: ease-in .3s;
+      background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat,
+                  linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat,
+                  linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat,
+                  linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
+      background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+      background-position: left top, right top, right bottom, left bottom;
+    }
+    .funBorderButton:hover {
+      background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript:;" class="funBorderButton">
+    fun border button
+  </a>
+</body>
+</html>
